@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-
+    [SerializeField] private Sprite deathSprite;
     Animator animator;
     public int enemiesKilledForBlood1;
     public int enemiesKilledForBlood2;
@@ -51,7 +51,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
             enemiesKilled++;
             Debug.Log(enemiesKilled);
         }
