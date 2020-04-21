@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 26432787}
   - component: {fileID: 26432786}
   - component: {fileID: 26432785}
+  - component: {fileID: 26432791}
   m_Layer: 0
   m_Name: Enemy (7)
   m_TagString: Enemy
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1272856027}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &26432786
@@ -199,9 +200,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26432784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -275,6 +276,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &26432791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26432784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &35040597
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +300,7 @@ GameObject:
   - component: {fileID: 35040598}
   - component: {fileID: 35040600}
   - component: {fileID: 35040599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +408,7 @@ GameObject:
   - component: {fileID: 64952903}
   - component: {fileID: 64952905}
   - component: {fileID: 64952904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,6 +560,7 @@ GameObject:
   - component: {fileID: 78909202}
   - component: {fileID: 78909201}
   - component: {fileID: 78909200}
+  - component: {fileID: 78909206}
   m_Layer: 0
   m_Name: Enemy (3)
   m_TagString: Enemy
@@ -567,7 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 711478686}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &78909201
@@ -610,9 +625,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78909199}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -686,6 +701,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78909206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78909199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &95245783
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105316569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +791,7 @@ GameObject:
   - component: {fileID: 116836662}
   - component: {fileID: 116836664}
   - component: {fileID: 116836663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125541480}
   - component: {fileID: 125541479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +970,7 @@ GameObject:
   - component: {fileID: 185373939}
   - component: {fileID: 185373940}
   - component: {fileID: 185373941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,7 +1078,7 @@ GameObject:
   - component: {fileID: 197001375}
   - component: {fileID: 197001374}
   - component: {fileID: 197001376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1238,7 +1266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274870618}
   - component: {fileID: 274870619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor 500X500
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1320,7 +1348,7 @@ GameObject:
   - component: {fileID: 307414024}
   - component: {fileID: 307414026}
   - component: {fileID: 307414025}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1428,7 +1456,7 @@ GameObject:
   - component: {fileID: 331575155}
   - component: {fileID: 331575157}
   - component: {fileID: 331575156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1536,7 +1564,7 @@ GameObject:
   - component: {fileID: 353227407}
   - component: {fileID: 353227408}
   - component: {fileID: 353227409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1675,7 +1703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364145575}
   - component: {fileID: 364145576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1757,7 +1785,7 @@ GameObject:
   - component: {fileID: 371190241}
   - component: {fileID: 371190242}
   - component: {fileID: 371190243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1865,7 +1893,7 @@ GameObject:
   - component: {fileID: 406258852}
   - component: {fileID: 406258851}
   - component: {fileID: 406258853}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 443732154}
   - component: {fileID: 443732153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2212,7 +2240,7 @@ GameObject:
   - component: {fileID: 468680342}
   - component: {fileID: 468680344}
   - component: {fileID: 468680343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2320,7 +2348,7 @@ GameObject:
   - component: {fileID: 472828951}
   - component: {fileID: 472828953}
   - component: {fileID: 472828952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2428,7 +2456,7 @@ GameObject:
   - component: {fileID: 488683785}
   - component: {fileID: 488683787}
   - component: {fileID: 488683786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2535,7 +2563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490466747}
   - component: {fileID: 490466748}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor 500X500 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,7 +2645,7 @@ GameObject:
   - component: {fileID: 503428301}
   - component: {fileID: 503428303}
   - component: {fileID: 503428302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2715,7 +2743,7 @@ GameObject:
   - component: {fileID: 505253996}
   - component: {fileID: 505253997}
   - component: {fileID: 505253998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2821,7 +2849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519286821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3006,6 +3034,7 @@ GameObject:
   - component: {fileID: 529272395}
   - component: {fileID: 529272392}
   - component: {fileID: 529272393}
+  - component: {fileID: 529272394}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -3043,9 +3072,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1479908865}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
+--- !u!114 &529272394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529272391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!58 &529272395
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3070,9 +3112,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529272391}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3157,7 +3199,7 @@ GameObject:
   - component: {fileID: 532257963}
   - component: {fileID: 532257965}
   - component: {fileID: 532257964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3263,7 +3305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561010620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Env
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3305,7 +3347,7 @@ GameObject:
   - component: {fileID: 574778198}
   - component: {fileID: 574778200}
   - component: {fileID: 574778199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582740251}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillars Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3435,7 +3477,7 @@ GameObject:
   - component: {fileID: 612211881}
   - component: {fileID: 612211883}
   - component: {fileID: 612211882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,7 +3666,7 @@ GameObject:
   - component: {fileID: 628693879}
   - component: {fileID: 628693880}
   - component: {fileID: 628693881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3732,7 +3774,7 @@ GameObject:
   - component: {fileID: 702814859}
   - component: {fileID: 702814861}
   - component: {fileID: 702814860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3869,7 +3911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 718866254}
   - component: {fileID: 718866253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3951,7 +3993,7 @@ GameObject:
   - component: {fileID: 740686626}
   - component: {fileID: 740686628}
   - component: {fileID: 740686627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4057,7 +4099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745703538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4157,7 +4199,7 @@ GameObject:
   - component: {fileID: 771961559}
   - component: {fileID: 771961561}
   - component: {fileID: 771961560}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4264,7 +4306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793914995}
   - component: {fileID: 793914996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor 500X500
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4376,7 +4418,7 @@ GameObject:
   - component: {fileID: 810205557}
   - component: {fileID: 810205559}
   - component: {fileID: 810205558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4473,7 +4515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 835339354}
   - component: {fileID: 835339353}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4555,7 +4597,7 @@ GameObject:
   - component: {fileID: 857988840}
   - component: {fileID: 857988841}
   - component: {fileID: 857988842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4662,7 +4704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 869529594}
   - component: {fileID: 869529593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4814,7 +4856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 878605207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorHolder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4889,7 @@ GameObject:
   - component: {fileID: 905139866}
   - component: {fileID: 905139868}
   - component: {fileID: 905139867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4955,7 +4997,7 @@ GameObject:
   - component: {fileID: 905871820}
   - component: {fileID: 905871821}
   - component: {fileID: 905871822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5109,7 +5151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 977076019}
   - component: {fileID: 977076018}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5191,7 +5233,7 @@ GameObject:
   - component: {fileID: 977189270}
   - component: {fileID: 977189269}
   - component: {fileID: 977189271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5380,7 +5422,7 @@ GameObject:
   - component: {fileID: 990170181}
   - component: {fileID: 990170183}
   - component: {fileID: 990170182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5488,7 +5530,7 @@ GameObject:
   - component: {fileID: 1011713251}
   - component: {fileID: 1011713253}
   - component: {fileID: 1011713252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5596,7 +5638,7 @@ GameObject:
   - component: {fileID: 1017583166}
   - component: {fileID: 1017583168}
   - component: {fileID: 1017583167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5704,7 +5746,7 @@ GameObject:
   - component: {fileID: 1032280348}
   - component: {fileID: 1032280350}
   - component: {fileID: 1032280349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5832,7 +5874,7 @@ GameObject:
   - component: {fileID: 1108814593}
   - component: {fileID: 1108814595}
   - component: {fileID: 1108814594}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5940,7 +5982,7 @@ GameObject:
   - component: {fileID: 1113610028}
   - component: {fileID: 1113610030}
   - component: {fileID: 1113610029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Humen Cell 160X160 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6038,7 +6080,7 @@ GameObject:
   - component: {fileID: 1115843301}
   - component: {fileID: 1115843303}
   - component: {fileID: 1115843302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6144,7 +6186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1123929166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6178,7 +6220,7 @@ GameObject:
   - component: {fileID: 1128026231}
   - component: {fileID: 1128026230}
   - component: {fileID: 1128026232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6367,7 +6409,7 @@ GameObject:
   - component: {fileID: 1152601204}
   - component: {fileID: 1152601206}
   - component: {fileID: 1152601205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6475,7 +6517,7 @@ GameObject:
   - component: {fileID: 1175828761}
   - component: {fileID: 1175828760}
   - component: {fileID: 1175828759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6586,6 +6628,7 @@ GameObject:
   - component: {fileID: 1176057975}
   - component: {fileID: 1176057974}
   - component: {fileID: 1176057973}
+  - component: {fileID: 1176057979}
   m_Layer: 0
   m_Name: Enemy (4)
   m_TagString: Enemy
@@ -6607,7 +6650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 95245784}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &1176057974
@@ -6650,9 +6693,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176057972}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6726,6 +6769,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1176057979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176057972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &1190468788
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,7 +6793,7 @@ GameObject:
   - component: {fileID: 1190468789}
   - component: {fileID: 1190468790}
   - component: {fileID: 1190468791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6848,6 +6904,7 @@ GameObject:
   - component: {fileID: 1198078838}
   - component: {fileID: 1198078837}
   - component: {fileID: 1198078836}
+  - component: {fileID: 1198078842}
   m_Layer: 0
   m_Name: Enemy (8)
   m_TagString: Enemy
@@ -6869,7 +6926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1848864174}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &1198078837
@@ -6912,9 +6969,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198078835}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6988,6 +7045,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 204.107}
+--- !u!114 &1198078842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198078835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &1223633107
 GameObject:
   m_ObjectHideFlags: 0
@@ -6997,7 +7067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1223633108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cell Holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7116,7 +7186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241638904}
   - component: {fileID: 1241638903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7201,6 +7271,7 @@ GameObject:
   - component: {fileID: 1261997073}
   - component: {fileID: 1261997072}
   - component: {fileID: 1261997071}
+  - component: {fileID: 1261997077}
   m_Layer: 0
   m_Name: Enemy (5)
   m_TagString: Enemy
@@ -7222,7 +7293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1738730070}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &1261997072
@@ -7265,9 +7336,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261997070}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7341,6 +7412,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1261997077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261997070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &1272856026
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,7 +7545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354333664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7499,7 +7583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364137244}
   - component: {fileID: 1364137245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7581,7 +7665,7 @@ GameObject:
   - component: {fileID: 1374078721}
   - component: {fileID: 1374078723}
   - component: {fileID: 1374078722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7688,7 +7772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396130882}
   - component: {fileID: 1396130883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7768,7 +7852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1414517867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table Holder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8065,7 +8149,7 @@ GameObject:
   - component: {fileID: 1526721085}
   - component: {fileID: 1526721087}
   - component: {fileID: 1526721086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8173,7 +8257,7 @@ GameObject:
   - component: {fileID: 1530093565}
   - component: {fileID: 1530093567}
   - component: {fileID: 1530093566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8458,6 +8542,7 @@ GameObject:
   - component: {fileID: 1606986088}
   - component: {fileID: 1606986087}
   - component: {fileID: 1606986086}
+  - component: {fileID: 1606986092}
   m_Layer: 0
   m_Name: Enemy (10)
   m_TagString: Enemy
@@ -8479,7 +8564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1792236057}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &1606986087
@@ -8522,9 +8607,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606986085}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8598,6 +8683,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1606986092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606986085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &1619503586
 GameObject:
   m_ObjectHideFlags: 0
@@ -8690,7 +8788,7 @@ GameObject:
   - component: {fileID: 1647399178}
   - component: {fileID: 1647399180}
   - component: {fileID: 1647399179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8990,7 +9088,7 @@ GameObject:
   - component: {fileID: 1673097865}
   - component: {fileID: 1673097867}
   - component: {fileID: 1673097866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer_Ver1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9087,6 +9185,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1681886243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681886244}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1681886244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681886243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.94, y: -14.14, z: -20.949219}
+  m_LocalScale: {x: 1.0726, y: 1.0726, z: 1.0726}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738730069
 GameObject:
   m_ObjectHideFlags: 0
@@ -9131,6 +9259,7 @@ GameObject:
   - component: {fileID: 1752594748}
   - component: {fileID: 1752594747}
   - component: {fileID: 1752594746}
+  - component: {fileID: 1752594752}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Enemy
@@ -9152,7 +9281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1659710331}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &1752594747
@@ -9195,9 +9324,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752594745}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9271,6 +9400,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752594752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752594745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &1755068584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,7 +9424,7 @@ GameObject:
   - component: {fileID: 1755068585}
   - component: {fileID: 1755068586}
   - component: {fileID: 1755068587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broken Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9379,7 +9521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1756644663}
   - component: {fileID: 1756644662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9460,7 +9602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764077717}
   - component: {fileID: 1764077716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9652,7 +9794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837194080}
   - component: {fileID: 1837194079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Puddle 80X80 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9844,7 +9986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1853402638}
   - component: {fileID: 1853402637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Max left wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9915,6 +10057,92 @@ Transform:
   m_Father: {fileID: 745703538}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1853598009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853598011}
+  - component: {fileID: 1853598010}
+  m_Layer: 0
+  m_Name: A*
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1853598010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853598009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAQIezGxih6awIAABAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK5yVlHPPa2y4hZA+EVMhWLr7I0hirkCWXHgGS4t9XkgV2WC7I3TOjnp6xvxATugFipFopRteSAvo5QP6Mfgw68gmOeCfFln3CJeadUVP5IBxiXrFh0uEjn6ZlDUYx8kvsuA9OHGgFK6Wql3QHC6mNdnCJuQZHKWl8tnDQ1wAd3d9w7lNO7pRO/enTnebJ4OyOBIQB1YVO7+b+N43xw0n7PBtPY95wdJeOR5P5LE2Xw2QSilhBOK4boL6jrtZ9FqtkWQgTrtcY4fsiknOmo1BkTk0wYttUoMA7QRl2fQdxPrwCtquM76GfuylLDSaaovDpgSlnX1sU/ZatpzXW+1bWB+bWX5OOW+Vt0fV//HAU6FLJ+uly7yjxd5iKkf0rPhGsTc/0PvzwXbgVB8z3uODwXoF4lislraCONMr6VKshfeger60tKiD7Dm+l3oC26ey+zDi5TmpwPofujwvO6sJTd1kLbLkMdofFAOUG88cJDmujYwmHehV/NbzhXX+/IvHIlDaOil0KL6+QVvlQtAye+W6sWUglIMBRdAMCc3N6cWXM7QhvuN61N8wj9m9SvDxylxfkJiXAXXyS3FAv8nAdlq7kYQ262ljDmYBOtCeenU8LKUS7YX1PLmlbq0pMemk7y+j31UJlNsckKcYZSebjSTobZqNZel8UpJgCTWfZDIXdY8L1iflLKzTa46YmuuLC7dnlAzNYKdyEbacKH1bss5Y9y5ko5ZYoALFpK1yFg3KXuJeSLilzBm3BGCbCvNFXjrgke6D5tVAeOl0ejcJ5VyVHDfuQxiM5WoQvSo7O6PwPUEsDBBQAAAgIAAAQIexW6cJTcwAAAIQAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgTilmSkgdrRSmollYrJBkqlJsoGlqZmRha6JoYWRcVJScpJ5aoqRhYmFko5CXmlOTixQV0llQapfYm4qRGdAYklGWmZeSmZeup57UWaKO8gCmOpaAFBLAQItABQAAAgIAAAQIezGxih6awIAABAFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIexW6cJTcwAAAIQAAAAJACQAAAAAAAAAAAAAALgCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAdgMAAAAA
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
+--- !u!4 &1853598011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853598009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.224905, y: -6.0258946, z: -2.4960938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915431314
 GameObject:
   m_ObjectHideFlags: 0
@@ -9926,7 +10154,7 @@ GameObject:
   - component: {fileID: 1915431315}
   - component: {fileID: 1915431317}
   - component: {fileID: 1915431316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mid wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10032,7 +10260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919906525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pillars Holder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10068,7 +10296,7 @@ GameObject:
   - component: {fileID: 1925410259}
   - component: {fileID: 1925410260}
   - component: {fileID: 1925410261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piller 200X200 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10341,6 +10569,7 @@ GameObject:
   - component: {fileID: 2035407074}
   - component: {fileID: 2035407073}
   - component: {fileID: 2035407072}
+  - component: {fileID: 2035407078}
   m_Layer: 0
   m_Name: Enemy (9)
   m_TagString: Enemy
@@ -10362,7 +10591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 1053552854}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &2035407073
@@ -10405,9 +10634,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035407071}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10481,6 +10710,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &2035407078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035407071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &2046637555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10495,6 +10737,7 @@ GameObject:
   - component: {fileID: 2046637558}
   - component: {fileID: 2046637557}
   - component: {fileID: 2046637556}
+  - component: {fileID: 2046637562}
   m_Layer: 0
   m_Name: Enemy (6)
   m_TagString: Enemy
@@ -10516,7 +10759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 413592221}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &2046637557
@@ -10559,9 +10802,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046637555}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10635,6 +10878,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &2046637562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046637555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &2047023254
 GameObject:
   m_ObjectHideFlags: 0
@@ -10646,7 +10902,7 @@ GameObject:
   - component: {fileID: 2047023255}
   - component: {fileID: 2047023257}
   - component: {fileID: 2047023256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10882,7 +11138,7 @@ GameObject:
   - component: {fileID: 2075670827}
   - component: {fileID: 2075670829}
   - component: {fileID: 2075670828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10990,7 +11246,7 @@ GameObject:
   - component: {fileID: 2076795627}
   - component: {fileID: 2076795629}
   - component: {fileID: 2076795628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blank wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11101,6 +11357,7 @@ GameObject:
   - component: {fileID: 2085336093}
   - component: {fileID: 2085336092}
   - component: {fileID: 2085336091}
+  - component: {fileID: 2085336097}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Enemy
@@ -11122,7 +11379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
   firePoint: {fileID: 799577014}
-  projectilePrefab: {fileID: 5510113500833886516, guid: 411a2c7a353f54941abaac8c199af8f5,
+  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
   projectileForce: 20
 --- !u!70 &2085336092
@@ -11165,9 +11422,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085336090}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8ea05ac25699f48af33ca78122cfab, type: 2}
+  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11241,6 +11498,19 @@ Transform:
   m_Father: {fileID: 2112252889}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &2085336097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085336090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
 --- !u!1 &2110462180
 GameObject:
   m_ObjectHideFlags: 0
