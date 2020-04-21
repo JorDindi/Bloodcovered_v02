@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-
+    public Sprite deathSprite;
     public Transform firePoint;
     public GameObject projectilePrefab;
 
@@ -23,7 +24,16 @@ public class EnemyController : MonoBehaviour
         {
             Shoot();
         }
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "AttackPoint")
+        {
+            GetComponent<SpriteRenderer>().sprite = deathSprite;
+            GetComponent<SpriteRenderer>().sortingOrder = -2;
+            Destroy(GetComponent<CapsuleCollider2D>());
+        }
     }
 
     void Shoot()
