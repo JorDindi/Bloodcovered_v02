@@ -150,17 +150,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26432784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1272856027}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &26432786
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -203,7 +198,7 @@ Animator:
   m_GameObject: {fileID: 26432784}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -289,7 +284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
 --- !u!1 &35040597
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +556,7 @@ GameObject:
   - component: {fileID: 78909201}
   - component: {fileID: 78909200}
   - component: {fileID: 78909206}
+  - component: {fileID: 78909207}
   m_Layer: 0
   m_Name: Enemy (3)
   m_TagString: Enemy
@@ -576,17 +571,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78909199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 711478686}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &78909201
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -629,7 +619,7 @@ Animator:
   m_GameObject: {fileID: 78909199}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -715,7 +705,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &78909207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78909199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &95245783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,11 +3074,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1479908865}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 1538559507}
-  projectileForce: 20
 --- !u!114 &529272394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,12 +3081,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529272391}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
 --- !u!58 &529272395
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3117,7 +3112,7 @@ Animator:
   m_GameObject: {fileID: 529272391}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6632,6 +6627,7 @@ GameObject:
   - component: {fileID: 1176057974}
   - component: {fileID: 1176057973}
   - component: {fileID: 1176057979}
+  - component: {fileID: 1176057980}
   m_Layer: 0
   m_Name: Enemy (4)
   m_TagString: Enemy
@@ -6646,17 +6642,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176057972}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 95245784}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &1176057974
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6699,7 +6690,7 @@ Animator:
   m_GameObject: {fileID: 1176057972}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6785,7 +6776,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &1176057980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176057972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1190468788
 GameObject:
   m_ObjectHideFlags: 0
@@ -6909,6 +6911,7 @@ GameObject:
   - component: {fileID: 1198078837}
   - component: {fileID: 1198078836}
   - component: {fileID: 1198078842}
+  - component: {fileID: 1198078843}
   m_Layer: 0
   m_Name: Enemy (8)
   m_TagString: Enemy
@@ -6923,17 +6926,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198078835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1848864174}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &1198078837
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6976,7 +6974,7 @@ Animator:
   m_GameObject: {fileID: 1198078835}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7062,7 +7060,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &1198078843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198078835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1223633107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,6 +7286,7 @@ GameObject:
   - component: {fileID: 1261997072}
   - component: {fileID: 1261997071}
   - component: {fileID: 1261997077}
+  - component: {fileID: 1261997078}
   m_Layer: 0
   m_Name: Enemy (5)
   m_TagString: Enemy
@@ -7291,17 +7301,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261997070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1738730070}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &1261997072
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7344,7 +7349,7 @@ Animator:
   m_GameObject: {fileID: 1261997070}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7430,7 +7435,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &1261997078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261997070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1272856026
 GameObject:
   m_ObjectHideFlags: 0
@@ -8549,6 +8565,7 @@ GameObject:
   - component: {fileID: 1606986087}
   - component: {fileID: 1606986086}
   - component: {fileID: 1606986092}
+  - component: {fileID: 1606986093}
   m_Layer: 0
   m_Name: Enemy (10)
   m_TagString: Enemy
@@ -8563,17 +8580,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606986085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1792236057}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &1606986087
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -8616,7 +8628,7 @@ Animator:
   m_GameObject: {fileID: 1606986085}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8702,7 +8714,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &1606986093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606986085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1619503586
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,6 +9260,7 @@ GameObject:
   - component: {fileID: 1752594747}
   - component: {fileID: 1752594746}
   - component: {fileID: 1752594752}
+  - component: {fileID: 1752594753}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Enemy
@@ -9251,17 +9275,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752594745}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1659710331}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &1752594747
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9304,7 +9323,7 @@ Animator:
   m_GameObject: {fileID: 1752594745}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9390,7 +9409,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &1752594753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752594745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755068584
 GameObject:
   m_ObjectHideFlags: 0
@@ -10548,6 +10578,7 @@ GameObject:
   - component: {fileID: 2035407073}
   - component: {fileID: 2035407072}
   - component: {fileID: 2035407078}
+  - component: {fileID: 2035407079}
   m_Layer: 0
   m_Name: Enemy (9)
   m_TagString: Enemy
@@ -10562,17 +10593,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035407071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 1053552854}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &2035407073
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10615,7 +10641,7 @@ Animator:
   m_GameObject: {fileID: 2035407071}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10701,7 +10727,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &2035407079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035407071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2046637555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10717,6 +10754,7 @@ GameObject:
   - component: {fileID: 2046637557}
   - component: {fileID: 2046637556}
   - component: {fileID: 2046637562}
+  - component: {fileID: 2046637563}
   m_Layer: 0
   m_Name: Enemy (6)
   m_TagString: Enemy
@@ -10731,17 +10769,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046637555}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 413592221}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &2046637557
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10784,7 +10817,7 @@ Animator:
   m_GameObject: {fileID: 2046637555}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10870,7 +10903,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &2046637563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046637555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2047023254
 GameObject:
   m_ObjectHideFlags: 0
@@ -11338,6 +11382,7 @@ GameObject:
   - component: {fileID: 2085336092}
   - component: {fileID: 2085336091}
   - component: {fileID: 2085336097}
+  - component: {fileID: 2085336098}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Enemy
@@ -11352,17 +11397,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085336090}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6d94c78ffaad2343963db8f5bc23d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deathSprite: {fileID: 21300000, guid: 3377ccd325313bc46a2e52da00d4f96b, type: 3}
-  firePoint: {fileID: 799577014}
-  projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
-    type: 3}
-  target: {fileID: 0}
-  projectileForce: 20
 --- !u!70 &2085336092
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11405,7 +11445,7 @@ Animator:
   m_GameObject: {fileID: 2085336090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ffb0d993a0171454591019435d3bf487, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d8a74e513e575746ad905449336b18e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11491,7 +11531,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 1
+--- !u!114 &2085336098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085336090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2110462180
 GameObject:
   m_ObjectHideFlags: 0
