@@ -159,6 +159,7 @@ MonoBehaviour:
   firePoint: {fileID: 1272856027}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &26432786
 CapsuleCollider2D:
@@ -584,6 +585,7 @@ MonoBehaviour:
   firePoint: {fileID: 711478686}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &78909201
 CapsuleCollider2D:
@@ -3074,6 +3076,7 @@ MonoBehaviour:
   firePoint: {fileID: 1479908865}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 1538559507}
   projectileForce: 20
 --- !u!114 &529272394
 MonoBehaviour:
@@ -3082,7 +3085,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529272391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36a4b78914a6de94fa1bab6205e39cf1, type: 3}
   m_Name: 
@@ -6652,6 +6655,7 @@ MonoBehaviour:
   firePoint: {fileID: 95245784}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &1176057974
 CapsuleCollider2D:
@@ -6928,6 +6932,7 @@ MonoBehaviour:
   firePoint: {fileID: 1848864174}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &1198078837
 CapsuleCollider2D:
@@ -7295,6 +7300,7 @@ MonoBehaviour:
   firePoint: {fileID: 1738730070}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &1261997072
 CapsuleCollider2D:
@@ -8566,6 +8572,7 @@ MonoBehaviour:
   firePoint: {fileID: 1792236057}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &1606986087
 CapsuleCollider2D:
@@ -9185,36 +9192,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1681886243
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1681886244}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1681886244
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1681886243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.94, y: -14.14, z: -20.949219}
-  m_LocalScale: {x: 1.0726, y: 1.0726, z: 1.0726}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738730069
 GameObject:
   m_ObjectHideFlags: 0
@@ -9283,6 +9260,7 @@ MonoBehaviour:
   firePoint: {fileID: 1659710331}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &1752594747
 CapsuleCollider2D:
@@ -10593,6 +10571,7 @@ MonoBehaviour:
   firePoint: {fileID: 1053552854}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &2035407073
 CapsuleCollider2D:
@@ -10761,6 +10740,7 @@ MonoBehaviour:
   firePoint: {fileID: 413592221}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &2046637557
 CapsuleCollider2D:
@@ -11381,6 +11361,7 @@ MonoBehaviour:
   firePoint: {fileID: 799577014}
   projectilePrefab: {fileID: 7261159960701812313, guid: c1fd5ae9751ba0e4ea7ba627fd0d66dc,
     type: 3}
+  target: {fileID: 0}
   projectileForce: 20
 --- !u!70 &2085336092
 CapsuleCollider2D:
