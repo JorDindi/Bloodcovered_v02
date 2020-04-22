@@ -16,6 +16,16 @@ public class PlayerAttack : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         gameObject.GetComponentInChildren<CapsuleCollider2D>().enabled = false;
     }
+    
+    public void CallHitBoxTrue()
+    {
+        gameObject.GetComponentInChildren<CapsuleCollider2D>().enabled = true;
+    }
+
+    public void CallHitBoxFalse()
+    {
+        gameObject.GetComponentInChildren<CapsuleCollider2D>().enabled = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -43,7 +53,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        gameObject.GetComponentInChildren<CapsuleCollider2D>().enabled = true;
         animator.SetTrigger("Attack");
     }
 

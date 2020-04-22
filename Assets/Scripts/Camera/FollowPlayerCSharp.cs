@@ -3,11 +3,12 @@ using System.Collections;
 
 public class FollowPlayerCSharp : MonoBehaviour
 {
-    public Transform player;
-    public Vector3 offset;
 
-    void Update()
+    [SerializeField] private GameObject target;
+    [SerializeField] private float speed = 0f;
+
+    void FixedUpdate()
     {
-        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, offset.z); // Camera follows the player with specified offset position
+        transform.position = Vector3.Lerp(transform.position, target.transform.position, speed); //Lerping to the player while smoothing the camera movement.
     }
 }

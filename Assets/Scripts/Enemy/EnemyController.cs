@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
     public Sprite deathSprite;
     public Transform firePoint;
     public GameObject projectilePrefab;
+    [SerializeField] private ParticleSystem ps;
+    [SerializeField] private AudioSource _as;
 
     public float projectileForce = 20f;
 
@@ -30,6 +32,8 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.tag == "AttackPoint")
         {
+            ps.Play();
+            _as.Play();
             GetComponent<SpriteRenderer>().sprite = deathSprite;
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
