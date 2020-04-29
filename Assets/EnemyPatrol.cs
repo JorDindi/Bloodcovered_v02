@@ -26,8 +26,8 @@ public class EnemyPatrol : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        float step = enemySpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, randomPoint, step);
+        //float step = enemySpeed * Time.deltaTime;
+        //transform.position = Vector3.MoveTowards(transform.position, randomPoint, step);
 
         //ConeVision
         Vector3 targetDir = targetForConeVision.position - transform.position;
