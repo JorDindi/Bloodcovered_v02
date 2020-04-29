@@ -1,31 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-using Pathfinding;
 
-public class EnemyAttack : StateMachineBehaviour
+public class EnemyDetect : StateMachineBehaviour
 {
-    //public Transform firePoint;
-    public GameObject projectilePrefab;
-    public AIDestinationSetter aiDestinationSetterSript;
-
-    public float projectileForce = 20f;
-
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        Transform transform = animator.gameObject.GetComponentInChildren<Transform>();
-        Transform firePoint = transform.Find("FirePoint");
-        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * projectileForce, ForceMode2D.Impulse);
-
-        //set aiDestinationSetterSript reference from scene and start chasing
-        if (aiDestinationSetterSript == null)
-            aiDestinationSetterSript = animator.gameObject.GetComponentInParent<AIDestinationSetter>();
-        aiDestinationSetterSript.enabled = true;
-    }
+    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+    //    
+    //}
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
