@@ -8,7 +8,7 @@ public class EnemyAttack : StateMachineBehaviour
 {
     //public Transform firePoint;
     public GameObject projectilePrefab;
-    public AIDestinationSetter aiDestinationSetterSript;
+    private AIDestinationSetter aiDestinationSetterSript;
 
     public float projectileForce = 20f;
 
