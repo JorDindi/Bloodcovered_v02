@@ -210,6 +210,7 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
+        <e p="EnemyDetect.cs" t="Include" />
         <e p="EnemyIdle.cs" t="Include" />
         <e p="EnemyPatrol.cs" t="Include" />
         <e p="Scripts" t="Include">
@@ -236,6 +237,7 @@
             <e p="ProjectileDestroy.cs" t="Include" />
           </e>
           <e p="Puddle.cs" t="Include" />
+          <e p="RestartLevel.cs" t="Include" />
         </e>
       </e>
       <e p="AstarPathfindingProject.csproj" t="IncludeRecursive" />
