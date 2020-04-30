@@ -13,7 +13,7 @@ public class EnemyAttack : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Transform transform = animator.gameObject.GetComponentInChildren<Transform>();
-        Transform firePoint = transform.FindChild("FirePoint");
+        Transform firePoint = transform.Find("FirePoint");
         GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * projectileForce, ForceMode2D.Impulse);
