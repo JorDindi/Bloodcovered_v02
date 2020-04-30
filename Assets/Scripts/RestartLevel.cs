@@ -19,10 +19,13 @@ public class RestartLevel : MonoBehaviour
          playerMov.enabled = false;
          playerSprite.enabled = false;
          _playerAttack.enabled = false;
-         if (Input.GetKeyDown(KeyCode.R))
-         {
-            SceneManager.LoadScene("CurrentWorkingScene", LoadSceneMode.Single);
-         }
+
+         Invoke("ResetScene", 2f);
       }
+   }
+
+   void ResetScene()
+   {
+      SceneManager.LoadScene("CurrentWorkingScene", LoadSceneMode.Single);
    }
 }
