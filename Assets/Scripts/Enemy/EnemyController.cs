@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     public GameObject projectilePrefab;
     [SerializeField] private ParticleSystem ps;
     [SerializeField] private AudioSource _as;
+    public Transform targetForConeVision;
+    public Component aiDestinationSetterSript;
 
     // Start is called before the first frame update
     void Start()
