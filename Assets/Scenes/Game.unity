@@ -9721,6 +9721,18 @@ MonoBehaviour:
   rb: {fileID: 1538559511}
   cam: {fileID: 519420031}
   _as: {fileID: 1794919242}
+  _bloodTrail:
+  - {fileID: 3563168383938257113, guid: 8a56adef4c413d243a7826d317ffe34c, type: 3}
+  - {fileID: 5826154538634857976, guid: 25ba5dd28f3adfa4db156a1a193f5a20, type: 3}
+  - {fileID: 4317493751731811104, guid: 92cb0006891f0694bbdbcb5c7ab8fabd, type: 3}
+  - {fileID: 3244907284643285098, guid: d68a0c8afe46603459b5abaefa915530, type: 3}
+  - {fileID: 6761543341924673392, guid: 25f344b50a42f9445abda1dd9537b867, type: 3}
+  isMoving: 0
+  _playerAttack: {fileID: 1538559512}
+  OriginalStartTime: 0.1
+  TimePassed: 0
+  minRandomRange: 0
+  maxRandomRage: 0.3
 --- !u!50 &1538559511
 Rigidbody2D:
   serializedVersion: 4
