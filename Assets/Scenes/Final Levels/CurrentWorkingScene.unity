@@ -11031,6 +11031,13 @@ MonoBehaviour:
   rb: {fileID: 1538559511}
   cam: {fileID: 519420031}
   _as: {fileID: 1794919242}
+  _bloodTrail: []
+  isMoving: 0
+  _playerAttack: {fileID: 1538559512}
+  OriginalStartTime: 0
+  TimePassed: 0
+  minRandomRange: 0
+  maxRandomRage: 0
 --- !u!50 &1538559511
 Rigidbody2D:
   serializedVersion: 4

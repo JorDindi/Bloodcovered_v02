@@ -11,12 +11,17 @@ public class EnemyPatrol : StateMachineBehaviour
 
     public float enemySpeed = .8f;
 
+    private EnemyController enemyController;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         transform = animator.gameObject.GetComponent<Transform>();
+        enemyController = animator.gameObject.GetComponent<EnemyController>();
+
         Vector2 enemyPostition = new Vector2(transform.position.x, transform.position.y);
         randomPoint = enemyPostition + Random.insideUnitCircle * 4.5f;
+        enemyController.MoveTo(randomPoint);
 
         //set targetForConeVision reference from scene
         if (targetForConeVision == null)
