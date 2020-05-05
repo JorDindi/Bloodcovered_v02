@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -10,8 +9,6 @@ public class PlayerAttack : MonoBehaviour
     public int enemiesKilledForBlood1;
     public int enemiesKilledForBlood2;
     public int enemiesKilled;
-
-
     // Start is called before the first frame update
     void Start()
     {

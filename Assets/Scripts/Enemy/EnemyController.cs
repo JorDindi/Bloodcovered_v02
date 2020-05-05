@@ -53,6 +53,10 @@ public class EnemyController : MonoBehaviour
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
             animator.SetBool("IsDead", true);
+
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
+            Vector3 scale = new Vector3( 0.8f, 0.8f, 0.8f );
+            transform.localScale = scale;
         }
     }
 }
