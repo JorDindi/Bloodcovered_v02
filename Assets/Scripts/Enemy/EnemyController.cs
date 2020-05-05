@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pathfinding;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,11 +16,16 @@ public class EnemyController : MonoBehaviour
     public Transform targetForConeVision;
     public Component aiDestinationSetterSript;
 
+    Path path;
+    Seeker seeker;
+    int currentWaypoint;
+
     // Start is called before the first frame update
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
         animator = gameObject.GetComponent<Animator>();
+        seeker = GetComponentInParent<Seeker>();
     }
 
     // Update is called once per frame
@@ -53,6 +59,20 @@ public class EnemyController : MonoBehaviour
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
             animator.SetBool("IsDead", true);
+        }
+    }
+
+    public void MoveTo(Vector2 target)
+    {
+        seeker.StartPath(transform.position, target, OnPathComplete);
+    }
+
+    private void OnPathComplete(Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentWaypoint = 0;
         }
     }
 }
