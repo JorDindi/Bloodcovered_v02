@@ -15,6 +15,15 @@ public class EnemyPatrolTrigger : MonoBehaviour
 
     private void Patrol()
     {
-        animator.SetTrigger("Patrol");
+        if (isPlaying(animator, "Idle"))
+            animator.SetTrigger("Patrol");
+    }
+
+    bool isPlaying(Animator anim, string stateName)
+    {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName(stateName))
+            return true;
+        else
+            return false;
     }
 }
