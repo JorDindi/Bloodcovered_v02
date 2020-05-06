@@ -11075,6 +11075,7 @@ MonoBehaviour:
   enemiesKilledForBlood1: 1
   enemiesKilledForBlood2: 3
   enemiesKilled: 0
+  isVisible: 0
 --- !u!114 &1538559513
 MonoBehaviour:
   m_ObjectHideFlags: 0

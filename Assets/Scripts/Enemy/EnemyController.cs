@@ -42,9 +42,10 @@ public class EnemyController : MonoBehaviour
         // If it hits something...
         if (hit.collider != null && hit.collider.tag == "Player" && hit.collider.gameObject.GetComponent<PlayerAttack>().isVisible)
         {
+            Debug.Log(hit.collider.gameObject.GetComponent<PlayerAttack>().isVisible);
             float distance = Mathf.Abs(hit.point.y - transform.position.y);
             Debug.Log("Player detected, distance is " + distance);
-            animator.SetTrigger("Attack");
+            animator.SetTrigger("EnemyAttack");
             //gameObject.GetComponent<EnemyShoot>().enabled = true;
         }
     }
