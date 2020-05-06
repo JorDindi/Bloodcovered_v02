@@ -10,6 +10,7 @@ public class PlayerAttack : MonoBehaviour
     public int enemiesKilledForBlood1;
     public int enemiesKilledForBlood2;
     public int enemiesKilled;
+    public bool isVisible = false;
 
 
     // Start is called before the first frame update
@@ -41,16 +42,19 @@ public class PlayerAttack : MonoBehaviour
         {
             animator.SetBool("Phase1Blood", false);
             animator.SetBool("Phase2Blood", false);
+            isVisible = false;
         }
         else if (enemiesKilledForBlood1 <= enemiesKilled && enemiesKilled < enemiesKilledForBlood2)
         {
             animator.SetBool("Phase1Blood", true);
             animator.SetBool("Phase2Blood", false);
+            isVisible = true;
         }
         else
         {
             animator.SetBool("Phase1Blood", true);
             animator.SetBool("Phase2Blood", true);
+            isVisible = true;
         }
     }
 

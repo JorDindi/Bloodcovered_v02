@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 6.5f);
 
         // If it hits something...
-        if (hit.collider != null && hit.collider.tag == "Player")
+        if (hit.collider != null && hit.collider.tag == "Player" && hit.collider.gameObject.GetComponent<PlayerAttack>().isVisible)
         {
             float distance = Mathf.Abs(hit.point.y - transform.position.y);
             Debug.Log("Player detected, distance is " + distance);
