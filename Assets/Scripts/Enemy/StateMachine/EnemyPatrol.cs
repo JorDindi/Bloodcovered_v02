@@ -19,12 +19,13 @@ public class EnemyPatrol : StateMachineBehaviour
         randomPoint = enemyPostition + Random.insideUnitCircle * 4.5f;
 
         //set targetForConeVision reference from scene
-        if (targetForConeVision == null)
-            targetForConeVision = animator.gameObject.GetComponent<EnemyController>().targetForConeVision;
+        /*if (targetForConeVision == null)
+            targetForConeVision = animator.gameObject.GetComponent<EnemyController>().targetForConeVision; */
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    /*override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         //float step = enemySpeed * Time.deltaTime;
         //transform.position = Vector3.MoveTowards(transform.position, randomPoint, step);
@@ -37,7 +38,9 @@ public class EnemyPatrol : StateMachineBehaviour
         {
             animator.SetTrigger("Attack");
         }
-    }
+
+        //Debug.Log(transform.position);
+    }*/
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
