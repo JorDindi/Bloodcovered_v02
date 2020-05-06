@@ -59,6 +59,7 @@ public class EnemyController : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = deathSprite;
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
+            GetComponentInParent<AIPath>().enabled = false;
             animator.SetBool("IsDead", true);
         }
     }
