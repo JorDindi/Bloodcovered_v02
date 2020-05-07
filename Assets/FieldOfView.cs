@@ -50,7 +50,7 @@ public class FieldOfView : MonoBehaviour
                 {
                     visibleTargets.Add(target);
                     Debug.Log("FOUND YOU! MUHAHAHA");
-                    animator.SetTrigger("Attack");
+                    animator.SetTrigger("EnemyAttack");
                 }
             }
         }
