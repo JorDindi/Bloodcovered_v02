@@ -6443,6 +6443,7 @@ GameObject:
   - component: {fileID: 832969215}
   - component: {fileID: 832969214}
   - component: {fileID: 832969216}
+  - component: {fileID: 832969217}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -6457,14 +6458,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832969212}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.3, y: -9.89, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 8.21, y: -12.14, z: 0}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 529272398}
   m_Father: {fileID: 2112252889}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &832969214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6543,6 +6544,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 1538559507}
+--- !u!114 &832969217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832969212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad69c49291f2f094889e4db4a7329649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 2.76
+  viewAngle: 70
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  animator: {fileID: 0}
+  visibleTargets: []
 --- !u!1 &835339352
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,7 +7292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933028403}
   - component: {fileID: 933028404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttackPoint
   m_TagString: AttackPoint
   m_Icon: {fileID: 0}
@@ -7315,7 +7338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 961475882}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LerpingPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -10907,7 +10930,7 @@ GameObject:
   - component: {fileID: 1538559510}
   - component: {fileID: 1538559512}
   - component: {fileID: 1538559513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -14735,7 +14758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112252888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.651351, y: -11.242095, z: -8.0546875}
+  m_LocalPosition: {x: 12.651351, y: -11.242095, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 832969213}
