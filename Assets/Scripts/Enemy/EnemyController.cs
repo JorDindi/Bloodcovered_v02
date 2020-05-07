@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
             Debug.Log("Player detected, distance is " + distance);
             animator.SetTrigger("EnemyAttack");
             //gameObject.GetComponent<EnemyShoot>().enabled = true;
-        }*/
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
