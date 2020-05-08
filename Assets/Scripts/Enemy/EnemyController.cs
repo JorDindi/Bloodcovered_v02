@@ -1,5 +1,4 @@
-﻿using Pathfinding;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,16 +15,11 @@ public class EnemyController : MonoBehaviour
     public Transform targetForConeVision;
     public Component aiDestinationSetterSript;
 
-    Path path;
-    Seeker seeker;
-    int currentWaypoint;
-
     // Start is called before the first frame update
     void Start()
     {
         Physics2D.queriesStartInColliders = false;
         animator = gameObject.GetComponent<Animator>();
-        seeker = GetComponentInParent<Seeker>();
     }
 
     // Update is called once per frame
@@ -40,12 +34,11 @@ public class EnemyController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 6.5f);
 
         // If it hits something...
-        if (hit.collider != null && hit.collider.tag == "Player" && hit.collider.gameObject.GetComponent<PlayerAttack>().isVisible)
+        if (hit.collider != null && hit.collider.tag == "Player")
         {
-            Debug.Log(hit.collider.gameObject.GetComponent<PlayerAttack>().isVisible);
             float distance = Mathf.Abs(hit.point.y - transform.position.y);
             Debug.Log("Player detected, distance is " + distance);
-            animator.SetTrigger("EnemyAttack");
+            animator.SetTrigger("Attack");
             //gameObject.GetComponent<EnemyShoot>().enabled = true;
         }
     }
@@ -59,22 +52,11 @@ public class EnemyController : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = deathSprite;
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
-            GetComponentInParent<AIPath>().enabled = false;
             animator.SetBool("IsDead", true);
-        }
-    }
 
-    public void MoveTo(Vector2 target)
-    {
-        seeker.StartPath(transform.position, target, OnPathComplete);
-    }
-
-    private void OnPathComplete(Path p)
-    {
-        if (!p.error)
-        {
-            path = p;
-            currentWaypoint = 0;
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
+            Vector3 scale = new Vector3( 0.8f, 0.8f, 0.8f );
+            transform.localScale = scale;
         }
     }
 }

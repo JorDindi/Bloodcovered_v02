@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\alon5\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\alon5\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Bloodcovered_v02.1432723045.00" t="ExcludeRecursive" />
-    <e p="C:\Users\alon5\Documents\GitHub\Bloodcovered_v02" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+    <e p="C:\Users\gal7s\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gal7s\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Bloodcovered_v02.-1999059211.00" t="ExcludeRecursive" />
+    <e p="C:\Users\gal7s\OneDrive\Documents\Game Development\Shenkar 2019-2020\Game Design &amp; UX\Lesson 4+5+6+7+8+9 (Top Down)\BloodCoverd\Git (BloodCoverd)\Bloodcovered_v02" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AstarPathfindingProject" t="Include">
@@ -211,14 +210,12 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
-        <e p="Editor" t="Include">
-          <e p="FieldOfViewEditor.cs" t="Include" />
-        </e>
+        <e p="EnemyDeath.cs" t="Include" />
+        <e p="EnemyPatrol.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Animations" t="Include">
             <e p="DiablePlayerAttackPoint.cs" t="Include" />
           </e>
-          <e p="BloodTrailEffect.cs" t="Include" />
           <e p="Camera" t="Include">
             <e p="FollowPlayerCSharp.cs" t="Include" />
           </e>
@@ -229,11 +226,8 @@
             <e p="EnemyPatrolTrigger.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyAttack.cs" t="Include" />
-              <e p="EnemyDeath.cs" t="Include" />
-              <e p="EnemyPatrol.cs" t="Include" />
             </e>
           </e>
-          <e p="FieldOfView.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
