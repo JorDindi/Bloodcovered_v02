@@ -40,17 +40,20 @@ public class FieldOfView : MonoBehaviour
 
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
-            Transform target = targetsInViewRadius[i].transform;
-            Vector3 dirToTarget = (target.position - transform.position).normalized;
-            if (Vector3.Angle(transform.up, dirToTarget) < viewAngle / 2)
+            if (targetsInViewRadius[i].GetComponent<PlayerAttack>().isVisible)
             {
-                float dstToTarget = Vector3.Distance(transform.position, target.position);
-
-                if (!Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
+                Transform target = targetsInViewRadius[i].transform;
+                Vector3 dirToTarget = (target.position - transform.position).normalized;
+                if (Vector3.Angle(transform.up, dirToTarget) < viewAngle / 2)
                 {
-                    visibleTargets.Add(target);
-                    Debug.Log("FOUND YOU! MUHAHAHA");
-                    animator.SetTrigger("EnemyAttack");
+                    float dstToTarget = Vector3.Distance(transform.position, target.position);
+
+                    if (!Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask))
+                    {
+                        visibleTargets.Add(target);
+                        Debug.Log("FOUND YOU! MUHAHAHA");
+                        animator.SetTrigger("EnemyAttack");
+                    }
                 }
             }
         }
