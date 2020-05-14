@@ -11,6 +11,7 @@ public class FieldOfView : MonoBehaviour
 
     public LayerMask targetMask;
     public LayerMask obstacleMask;
+    
 
     private Animator animator;
 

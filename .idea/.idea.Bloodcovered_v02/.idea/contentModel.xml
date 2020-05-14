@@ -227,13 +227,14 @@
           <e p="Enemy" t="Include">
             <e p="EnemyController.cs" t="Include" />
             <e p="EnemyPatrolTrigger.cs" t="Include" />
+            <e p="FieldOfView.cs" t="Include" />
             <e p="StateMachine" t="Include">
               <e p="EnemyAttack.cs" t="Include" />
               <e p="EnemyDeath.cs" t="Include" />
               <e p="EnemyPatrol.cs" t="Include" />
             </e>
           </e>
-          <e p="FieldOfView.cs" t="Include" />
+          <e p="FOVVisuals.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />

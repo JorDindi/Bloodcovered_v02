@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     public GameObject projectilePrefab;
     [SerializeField] private ParticleSystem ps;
     [SerializeField] private AudioSource _as;
+    [SerializeField] private SpriteRenderer fovSprite;
     public Transform targetForConeVision;
     public Component aiDestinationSetterSript;
 
@@ -57,6 +58,7 @@ public class EnemyController : MonoBehaviour
             ps.Play();
             _as.Play();
             GetComponent<SpriteRenderer>().sprite = deathSprite;
+            fovSprite.enabled = false;
             GetComponent<SpriteRenderer>().sortingOrder = -2;
             Destroy(GetComponent<CapsuleCollider2D>());
             GetComponentInParent<AIPath>().enabled = false;
