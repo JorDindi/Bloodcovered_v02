@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Pathfinding;
+using System.Runtime.Remoting.Messaging;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -21,7 +23,7 @@ public class FieldOfView : MonoBehaviour
     void Start()
     {
         StartCoroutine("FindTargetsWithDelay", .2f);
-        animator = gameObject.GetComponentInChildren<Animator>();
+        animator = gameObject.GetComponentInParent<Seeker>().GetComponentInChildren<Animator>();
     }
 
 
@@ -38,10 +40,9 @@ public class FieldOfView : MonoBehaviour
     {
         visibleTargets.Clear();
         Collider2D[] targetsInViewRadius = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
-
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
-            if (targetsInViewRadius[i].GetComponent<PlayerAttack>().isVisible)
+            if (targetsInViewRadius[i].GetComponentInParent<PlayerAttack>().isVisible)
             {
                 Transform target = targetsInViewRadius[i].transform;
                 Vector3 dirToTarget = (target.position - transform.position).normalized;
