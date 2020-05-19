@@ -12,7 +12,7 @@ public class FOVVisuals : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && playerAttack.isVisible == true)
         {
-            fovSprite.color = new Color(240f/255f, 0f/255f, 0f/255f, 205f/255f);
+            fovSprite.color = new Color(240f/255f, 0f/255f, 0f/255f, 195f/255f);
         }
     }
 
@@ -20,7 +20,7 @@ public class FOVVisuals : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && playerAttack.isVisible == true)
         {
-            fovSprite.color = new Color(188f/255f, 235f/255f, 241f/255f, 140f/255f);
+            fovSprite.color = new Color(188f/255f, 235f/255f, 241f/255f, 130f/255f);
         }
     }
 }
