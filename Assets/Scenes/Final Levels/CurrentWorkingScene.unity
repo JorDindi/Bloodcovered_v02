@@ -3518,7 +3518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462506250}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -8.710001, y: -1.4329998, z: 0}
+  m_LocalPosition: {x: -8.73, y: -1.4329998, z: 0}
   m_LocalScale: {x: 1.0507102, y: 1.3999999, z: 1}
   m_Children:
   - {fileID: 1810250097}
@@ -3538,7 +3538,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.01419802}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3549,7 +3549,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 0.3}
+  m_Size: {x: 5, y: 0.27160397}
   m_EdgeRadius: 0
 --- !u!95 &462506254
 Animator:
@@ -19367,6 +19367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1756644663}
   - component: {fileID: 1756644662}
+  - component: {fileID: 1756644664}
   m_Layer: 8
   m_Name: Max left wall (1)
   m_TagString: Untagged
@@ -19438,6 +19439,19 @@ Transform:
   m_Father: {fileID: 745703538}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!65 &1756644664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756644661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6000004, y: 0.44695428, z: 0.2}
+  m_Center: {x: -0.00000047683716, y: 0.57652396, z: 0}
 --- !u!1 &1756957934
 GameObject:
   m_ObjectHideFlags: 0
