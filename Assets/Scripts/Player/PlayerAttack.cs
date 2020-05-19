@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     public int enemiesKilledForBlood2;
     public int enemiesKilled;
     public bool isVisible = false;
+    [SerializeField] private AudioSource swingSound;
+    [SerializeField] private CameraShake _cameraShake;
 
 
     // Start is called before the first frame update
@@ -29,6 +31,11 @@ public class PlayerAttack : MonoBehaviour
     public void CallHitBoxFalse()
     {
         gameObject.GetComponentInChildren<CapsuleCollider2D>().enabled = false;
+    }
+
+    public void PlaySwooshSound()
+    {
+        swingSound.Play();
     }
 
     // Update is called once per frame
@@ -61,6 +68,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("Attack");
+        StartCoroutine(_cameraShake.Shake(0.05f, 0.07f)); 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
