@@ -253,6 +253,7 @@
             </e>
           </e>
           <e p="FOVVisuals.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />

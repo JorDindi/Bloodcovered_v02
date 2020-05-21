@@ -59,12 +59,12 @@ public class EnemyController : MonoBehaviour
             _as.Play();
             
             GetComponent<SpriteRenderer>().sprite = deathSprite;
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
-            Vector3 scale = new Vector3( 0.8f, 0.8f, 0.8f );
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.69f);
+            Vector3 scale = new Vector3( 0.78f, 0.78f, 0.78f );
             transform.localScale = scale;
             
             fovSprite.enabled = false;
-            GetComponent<SpriteRenderer>().sortingOrder = -2;
+            GetComponent<SpriteRenderer>().sortingOrder = -6;
             Destroy(GetComponent<CapsuleCollider2D>());
             GetComponentInParent<AIPath>().enabled = false;
             animator.SetBool("IsDead", true);
