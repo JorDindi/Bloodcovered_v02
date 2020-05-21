@@ -13,6 +13,11 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        //Debug.Log("Oh Fuck");
+        Debug.Log("Oh Fuck");
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 }
